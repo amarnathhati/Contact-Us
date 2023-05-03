@@ -23,7 +23,7 @@ router.post('/add-product', (req, res, next) => {
 router.post('/success', (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
-    res.redirect('/success?message=Form successfully filled');
+    res.redirect('admin/success?message=Form successfully filled');
 });
 router.get('/success', (req, res) => {
     const message = req.query.message;
